@@ -56,8 +56,7 @@ function input_fixed () {
         document.getElementById("wrapper").classList.remove("background-green");
         document.getElementById("wrapper").classList.add("background-red");
         document.getElementById("window__help").innerText = "Ваша карта невалидная";
-        document.getElementById("window__smiley").innerText = ":(";
+        document.getElementById("window__smiley").innerText = ":o";
     }
-
 }
 
