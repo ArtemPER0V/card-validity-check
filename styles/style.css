@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    background-color: #F0F0F0;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 16vh 0;
+}
+/*-----------------------------------------*/
+.window {
+    width: 32vw;
+    height: 16vw;
+
+    background-color: #F8F8F8;
+    border: 0.4vw solid #3E3E3E;
+    border-radius: 1.7vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 900px) {
+    .wrapper {
+        padding: 16vh 15vw;
+    }
+    .window {
+        width: 70vw;
+        height: 35vw;
+        border: 7px solid #3E3E3E;
+        border-radius: 5vw;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding: 16vh 7vw;
+    }
+    .window {
+        width: 86vw;
+        height: 43vw;
+        border: 6px solid #3E3E3E;
+    }
+}
+/*=================================================*/
+.window__card-number {
+    width: 84%;
+    height: 24%;
+
+    background-color: #F0F0F0;
+    border: 0.3vw solid #DBDBDB;
+    border-radius: 1vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-number__input-card-number {
+
+    display: block;
+    width: 24.8vw;
+    height: 100%;
+
+    background-color: transparent;
+
+    text-align: center;
+    font-size: 2.75vw;
+    font-family: 'Supermercado One', cursive;
+}
+.window__arrow {
+    width: 2vw;
+}
+.window__help {
+    font-size: 2vw;
+    font-family: 'Comfortaa', cursive;
+    color: #3E3E3E;
+}
+.window__underline {
+    width: 74.8%;
+    height: 1%;
+    border-radius: 1px;
+
+    background-color: #F0F0F0;
+}
+.window__smiley {
+    font-size: 2vw;
+    font-family: 'Comfortaa', cursive;
+    color: #3E3E3E;
+    transform: rotate(90deg);
+    user-select: none;
+}
+@media screen and (max-width: 900px) {
+    .card-number__input-card-number {
+        width: 54vw;
+        font-size: 6vw;
+    }
+    .window__arrow {
+        width: 4.4vw;
+    }
+    .window__help {
+        font-size: 4.5vw;
+    }
+    .window__smiley {
+        font-size: 4.5vw;
+    }
+    .window__card-number {
+        border: 0.57vw solid #DBDBDB;
+        border-radius: 2.3vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    .card-number__input-card-number {
+        width: 66.7vw;
+        font-size: 7.4vw;
+    }
+    .window__arrow {
+        width: 5.4vw;
+    }
+    .window__help {
+        font-size: 5.5vw;
+    }
+    .window__smiley {
+        font-size: 5.5vw;
+    }
+    .window__card-number {
+        border: 0.7vw solid #DBDBDB;
+        border-radius: 3vw;
+    }
+}
+
+.background-green {
+    background-color: #8AE87B;
+}
+.background-red {
+    background-color: #E16868;
+}
