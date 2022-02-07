@@ -43,20 +43,22 @@ function input_fixed () {
         document.getElementById("wrapper").classList.remove("background-red");
         document.getElementById("window__help").innerText = "Введите номер карты";
         document.getElementById("window__smiley").innerText = ":|";
+        document.getElementById("arrow").classList.remove("oppacity=0");
         
     }
     else if((evens + odds) % 10 == 0) {
         document.getElementById("wrapper").classList.remove("background-red");
         document.getElementById("wrapper").classList.add("background-green");
-        
         document.getElementById("window__help").innerText = "Ваша карта валидная";
         document.getElementById("window__smiley").innerText = ":)";
+        document.getElementById("arrow").classList.add("oppacity=1");
     }
     else {
         document.getElementById("wrapper").classList.remove("background-green");
         document.getElementById("wrapper").classList.add("background-red");
         document.getElementById("window__help").innerText = "Ваша карта невалидная";
         document.getElementById("window__smiley").innerText = ":o";
+        document.getElementById("arrow").classList.add("oppacity=1");
     }
 }
 
